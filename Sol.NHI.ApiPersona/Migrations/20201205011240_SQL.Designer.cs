@@ -9,7 +9,7 @@ using Sol.NHI.ApiPersona.Contexto;
 namespace Sol.NHI.ApiPersona.Migrations
 {
     [DbContext(typeof(PersonaContext))]
-    [Migration("20201204234011_SQL")]
+    [Migration("20201205011240_SQL")]
     partial class SQL
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -11,6 +11,7 @@ namespace Sol.NHI.ApiPersona.Model
         [Key]
         public int IdPersona { get; set; }
         public string ApellidoPaterno { get; set; }
+        [Required]
         public string ApellidoMaterno { get; set; }
         public string Nombres { get; set; }
     }

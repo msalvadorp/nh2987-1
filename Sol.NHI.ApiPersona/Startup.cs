@@ -12,6 +12,9 @@ using System.Threading.Tasks;
 using Microsoft.OpenApi.Models;
 using Sol.NHI.ApiPersona.Contexto;
 using Microsoft.EntityFrameworkCore;
+using Sol.NHI.ApiPersona.Services;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Diagnostics;
 
 namespace Sol.NHI.ApiPersona
 {
@@ -28,17 +31,22 @@ namespace Sol.NHI.ApiPersona
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<PersonaContext>(
-               opt => {
+               opt =>
+               {
                    opt.UseSqlServer(Configuration.GetValue<string>("CnnDB"));
 
                });
+
+            services.AddTransient<IPersonaService, PersonaService>();
             services.AddControllers();
+
             AddSwagger(services);
         }
 
         private void AddSwagger(IServiceCollection services)
         {
-            services.AddSwaggerGen(opt => {
+            services.AddSwaggerGen(opt =>
+            {
                 string grupo = "V1";
 
                 opt.SwaggerDoc(grupo, new OpenApiInfo
@@ -50,11 +58,11 @@ namespace Sol.NHI.ApiPersona
                         Name = "Juan Perez",
                         Email = "jperez@hotmail.com",
                         Url = new Uri("http://hotmail.com")
-                    }, 
+                    },
                     Description = "Api de Maestras de Personas "
 
                 }); ;
-            
+
             });
         }
 
@@ -65,9 +73,30 @@ namespace Sol.NHI.ApiPersona
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler(appError =>
+                {
+                    appError.Run(async context =>
+                    {
 
+                        var car = context.Features.Get<IExceptionHandlerFeature>();
+                        if (car != null)
+                        {
+                            Exception detalleError = car.Error;
+                           
+                        }
+
+                        context.Response.StatusCode = (int)System.Net.HttpStatusCode.InternalServerError;
+                        context.Response.ContentType = "application/json";
+                        await context.Response.WriteAsync("Tuvimo problemas");
+                    });
+
+                });
+            }
             app.UseSwagger();
-            app.UseSwaggerUI(r => {
+            app.UseSwaggerUI(r =>
+            {
                 r.SwaggerEndpoint("/swagger/V1/swagger.json", "Api Persona V1");
             });
 
