@@ -8,7 +8,7 @@ namespace SoNHl.ApiOperacion.Applications
 {
     public interface IOperacionApplication
     {
-        OperationInsertResponseDTO ProcessTranser
+        Task<OperationInsertResponseDTO> ProcessTranser
             (OperationInsertResquestDTO operationInsertResquestDTO);
 
     }

@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Sol.NHI.Common.DTO;
+using SoNHl.ApiOperacion.Applications;
 using SoNHl.ApiOperacion.Contexto;
 using SoNHl.ApiOperacion.Services;
 using System;
@@ -33,8 +35,9 @@ namespace SoNHl.ApiOperacion
                 
                 });
 
+            services.Configure<BusConfigDTO>(Configuration.GetSection("Bus"));
             services.AddTransient<IOperacionService, OperacionService>();
-
+            services.AddTransient<IOperacionApplication, OperacionApplication>();
             services.AddControllers();
         }
 

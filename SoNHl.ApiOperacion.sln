@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sol.NHI.ApiConsulta", "Sol.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sol.NHI.ApiPersona", "Sol.NHI.ApiPersona\Sol.NHI.ApiPersona.csproj", "{F06F00B1-B0E7-4B76-884A-9CFAF9CADC06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sol.NHI.Common", "Sol.NHI.Common\Sol.NHI.Common.csproj", "{D0A00831-F7C0-4BBC-B0AA-5913816C3571}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sol.NHI.Common", "Sol.NHI.Common\Sol.NHI.Common.csproj", "{D0A00831-F7C0-4BBC-B0AA-5913816C3571}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsService1", "WindowsService1\WindowsService1.csproj", "{E1C2204D-61B5-40F9-99E3-826B9658E274}"
 EndProject
