@@ -2,7 +2,10 @@
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
 WORKDIR /app
-EXPOSE 80
+ENV ASPNETCORE_URLS="http://+:8080"
+ENV CnnDB="Data Source=srttmpnh.database.windows.net;Initial Catalog=NhDbPersona;Persist Security Info=True;User ID=sqlserver;Password=A123456789123$"
+EXPOSE 8080
+
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src

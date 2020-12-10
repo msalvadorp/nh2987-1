@@ -1,3 +1,4 @@
+using Azure.Storage.Blobs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -9,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Sol.NHI.Common.DTO;
 using SoNHl.ApiOperacion.Applications;
 using SoNHl.ApiOperacion.Contexto;
+using SoNHl.ApiOperacion.Helpers.Storage;
 using SoNHl.ApiOperacion.Services;
 using System;
 using System.Collections.Generic;
@@ -29,6 +31,8 @@ namespace SoNHl.ApiOperacion
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped(t => new BlobServiceClient(Configuration.GetValue<string>("StorageAzure:CnnServer")));
+            
             services.AddDbContext<OperacionContext>(
                 opt => {
                     opt.UseSqlServer(Configuration.GetValue<string>("CnnDB"));
@@ -36,8 +40,19 @@ namespace SoNHl.ApiOperacion
                 });
 
             services.Configure<BusConfigDTO>(Configuration.GetSection("Bus"));
+
+            services.AddTransient<IBlobHelper, BlobHelper>();
             services.AddTransient<IOperacionService, OperacionService>();
             services.AddTransient<IOperacionApplication, OperacionApplication>();
+
+            //cors
+            services.AddCors(options => {
+                options.AddPolicy("Todos", builder => {
+                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            
+            });
+            
             services.AddControllers();
         }
 
@@ -48,9 +63,9 @@ namespace SoNHl.ApiOperacion
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors("Todos");
             app.UseRouting();
-
+           
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
