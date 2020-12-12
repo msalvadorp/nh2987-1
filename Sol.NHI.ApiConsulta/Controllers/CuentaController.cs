@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DnsClient.Internal;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Sol.NHI.ApiConsulta.Models.Entities;
 using Sol.NHI.ApiConsulta.Repositories;
 using System;
@@ -13,16 +15,32 @@ namespace Sol.NHI.ApiConsulta.Controllers
     public class CuentaController : ControllerBase
     {
         private readonly ICuentaRepository cuentaRepository;
+        private readonly ILogger<CuentaController> logger;
 
-        public CuentaController(ICuentaRepository cuentaRepository)
+        public CuentaController(
+            ICuentaRepository cuentaRepository, ILogger<CuentaController> logger )
         {
             this.cuentaRepository = cuentaRepository;
+            this.logger = logger;
         }
 
         [HttpPost]
         public async Task<IActionResult> Save(Cuenta cuenta)
         {
-            return Ok(await cuentaRepository.Insertar(cuenta));
+            try
+            {
+                logger.LogWarning("Iniciando grabacion;");
+                var tmp = await cuentaRepository.Insertar(cuenta);
+                logger.LogWarning("Datos grabados");
+                return Ok(tmp);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Nose pudo insertar la cuenta");
+                throw;
+            }
+
+      
         }
 
 
