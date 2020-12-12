@@ -25,9 +25,9 @@ namespace Sol.NHI.ApiIdentityServer.Helpers
                 {
                     Scopes = { "apiconsulta" }
                 },
-                new ApiResource("apioperacion", "Mi Api de Operacion")
+                new ApiResource("apipersona", "Mi Api de Operacion")
                 {
-                    Scopes = { "apioperacion" }
+                    Scopes = { "apipersona" }
                 },
                 new ApiResource("apiplanilla", "Comentario API")
                 {
@@ -40,7 +40,7 @@ namespace Sol.NHI.ApiIdentityServer.Helpers
          new ApiScope[]
          {
                     new ApiScope("apiconsulta", "MyActions API"),
-                    new ApiScope("apioperacion", "MyActions API")
+                    new ApiScope("apipersona", "MyActions API")
          };
 
 
@@ -54,7 +54,7 @@ namespace Sol.NHI.ApiIdentityServer.Helpers
                 ClientId = "appmovil",
                 AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                 ClientSecrets = { new Secret("123".Sha256()) },
-                AllowedScopes = { "apioperacion" }
+                AllowedScopes = { "apipersona", "apiconsulta" }
             };
 
             listado.Add(c1);

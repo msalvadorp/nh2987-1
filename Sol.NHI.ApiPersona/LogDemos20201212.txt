@@ -11,3 +11,300 @@
 2020-12-12 09:46:39.862 -05:00 [INF] Executed action Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona) in 87.8656ms
 2020-12-12 09:46:39.865 -05:00 [INF] Executed endpoint 'Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona)'
 2020-12-12 09:46:39.872 -05:00 [INF] Request finished in 310.3225ms 200 application/json; charset=utf-8
+2020-12-12 10:48:37.448 -05:00 [WRN] Cadena es: Data Source=srttmpnh.database.windows.net;Initial Catalog=NhDbPersona;Persist Security Info=True;User ID=sqlserver;Password=A123456789123$
+2020-12-12 10:48:37.711 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-12-12 10:48:37.730 -05:00 [INF] Hosting environment: Development
+2020-12-12 10:48:37.737 -05:00 [INF] Content root path: D:\Cursos\NH\202010\20487\Sesion02\Ejercicios\SoNHl.ApiOperacion\Sol.NHI.ApiPersona
+2020-12-12 10:48:37.806 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/weatherforecast  
+2020-12-12 10:48:37.882 -05:00 [INF] Executing endpoint 'Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona)'
+2020-12-12 10:48:37.926 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Sol.NHI.ApiPersona.WeatherForecast] Get() on controller Sol.NHI.ApiPersona.Controllers.WeatherForecastController (Sol.NHI.ApiPersona).
+2020-12-12 10:48:37.940 -05:00 [INF] Executing action method Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona) - Validation state: "Valid"
+2020-12-12 10:48:37.951 -05:00 [INF] Executed action method Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.9861ms.
+2020-12-12 10:48:37.964 -05:00 [INF] Executing ObjectResult, writing value of type 'Sol.NHI.ApiPersona.WeatherForecast[]'.
+2020-12-12 10:48:38.026 -05:00 [INF] Executed action Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona) in 91.8895ms
+2020-12-12 10:48:38.031 -05:00 [INF] Executed endpoint 'Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona)'
+2020-12-12 10:48:38.043 -05:00 [INF] Request finished in 246.3054ms 200 application/json; charset=utf-8
+2020-12-12 10:48:46.350 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/persona/1  
+2020-12-12 10:48:46.368 -05:00 [INF] Authorization failed.
+2020-12-12 10:48:46.385 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-12 10:48:46.914 -05:00 [INF] Request finished in 564.9139ms 500 text/plain
+2020-12-12 10:50:04.209 -05:00 [INF] User profile is available. Using 'C:\Users\Miguelon\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-12-12 10:50:05.538 -05:00 [WRN] Cadena es: Data Source=srttmpnh.database.windows.net;Initial Catalog=NhDbPersona;Persist Security Info=True;User ID=sqlserver;Password=A123456789123$
+2020-12-12 10:50:05.725 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-12-12 10:50:05.730 -05:00 [INF] Hosting environment: Development
+2020-12-12 10:50:05.740 -05:00 [INF] Content root path: D:\Cursos\NH\202010\20487\Sesion02\Ejercicios\SoNHl.ApiOperacion\Sol.NHI.ApiPersona
+2020-12-12 10:50:05.807 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/weatherforecast  
+2020-12-12 10:50:06.482 -05:00 [INF] Executing endpoint 'Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona)'
+2020-12-12 10:50:06.523 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Sol.NHI.ApiPersona.WeatherForecast] Get() on controller Sol.NHI.ApiPersona.Controllers.WeatherForecastController (Sol.NHI.ApiPersona).
+2020-12-12 10:50:06.533 -05:00 [INF] Executing action method Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona) - Validation state: "Valid"
+2020-12-12 10:50:06.549 -05:00 [INF] Executed action method Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.4649ms.
+2020-12-12 10:50:06.563 -05:00 [INF] Executing ObjectResult, writing value of type 'Sol.NHI.ApiPersona.WeatherForecast[]'.
+2020-12-12 10:50:06.640 -05:00 [INF] Executed action Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona) in 107.7082ms
+2020-12-12 10:50:06.649 -05:00 [INF] Executed endpoint 'Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona)'
+2020-12-12 10:50:06.659 -05:00 [INF] Request finished in 865.5971ms 200 application/json; charset=utf-8
+2020-12-12 10:50:12.625 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/persona/1  
+2020-12-12 10:50:12.659 -05:00 [INF] Authorization failed.
+2020-12-12 10:50:12.671 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-12-12 10:50:12.676 -05:00 [INF] Request finished in 51.9002ms 401 
+2020-12-12 10:50:54.960 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/persona/1  
+2020-12-12 10:50:59.615 -05:00 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-12 10:50:59.714 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-12 10:50:59.764 -05:00 [INF] Request finished in 4804.201ms 500 text/plain
+2020-12-12 10:52:09.341 -05:00 [INF] User profile is available. Using 'C:\Users\Miguelon\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-12-12 10:52:10.661 -05:00 [WRN] Cadena es: Data Source=srttmpnh.database.windows.net;Initial Catalog=NhDbPersona;Persist Security Info=True;User ID=sqlserver;Password=A123456789123$
+2020-12-12 10:52:10.912 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-12-12 10:52:10.932 -05:00 [INF] Hosting environment: Development
+2020-12-12 10:52:10.936 -05:00 [INF] Content root path: D:\Cursos\NH\202010\20487\Sesion02\Ejercicios\SoNHl.ApiOperacion\Sol.NHI.ApiPersona
+2020-12-12 10:52:11.023 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/weatherforecast  
+2020-12-12 10:52:11.211 -05:00 [INF] Executing endpoint 'Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona)'
+2020-12-12 10:52:11.261 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Sol.NHI.ApiPersona.WeatherForecast] Get() on controller Sol.NHI.ApiPersona.Controllers.WeatherForecastController (Sol.NHI.ApiPersona).
+2020-12-12 10:52:11.278 -05:00 [INF] Executing action method Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona) - Validation state: "Valid"
+2020-12-12 10:52:11.296 -05:00 [INF] Executed action method Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.8096ms.
+2020-12-12 10:52:11.308 -05:00 [INF] Executing ObjectResult, writing value of type 'Sol.NHI.ApiPersona.WeatherForecast[]'.
+2020-12-12 10:52:11.355 -05:00 [INF] Executed action Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona) in 82.5226ms
+2020-12-12 10:52:11.359 -05:00 [INF] Executed endpoint 'Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona)'
+2020-12-12 10:52:11.371 -05:00 [INF] Request finished in 363.8217ms 200 application/json; charset=utf-8
+2020-12-12 10:52:16.777 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/persona/1  
+2020-12-12 10:52:17.868 -05:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX12729: Unable to decode the header '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. jwtEncodedString: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: Ș. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type)
+   at System.IdentityModel.Tokens.Jwt.JsonExtensions.DeserializeJwtHeader(String jsonString)
+   at System.IdentityModel.Tokens.Jwt.JwtHeader.Base64UrlDeserialize(String base64UrlEncodedJsonString)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityToken.Decode(String[] tokenParts, String rawData)
+   --- End of inner exception stack trace ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityToken.Decode(String[] tokenParts, String rawData)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ReadJwtToken(String token)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-12 10:52:17.977 -05:00 [INF] Bearer was not authenticated. Failure message: IDX12729: Unable to decode the header '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. jwtEncodedString: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-12-12 10:52:17.989 -05:00 [INF] Authorization failed.
+2020-12-12 10:52:18.015 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-12-12 10:52:18.025 -05:00 [INF] Request finished in 1248.0875ms 401 
+2020-12-12 10:52:41.546 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/persona/1  
+2020-12-12 10:52:41.677 -05:00 [INF] Successfully validated the token.
+2020-12-12 10:52:41.684 -05:00 [INF] Authorization was successful.
+2020-12-12 10:52:41.688 -05:00 [INF] Executing endpoint 'Sol.NHI.ApiPersona.Controllers.PersonaController.Recuperar (Sol.NHI.ApiPersona)'
+2020-12-12 10:52:41.718 -05:00 [INF] Route matched with {action = "Recuperar", controller = "Persona"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Recuperar(Int32) on controller Sol.NHI.ApiPersona.Controllers.PersonaController (Sol.NHI.ApiPersona).
+2020-12-12 10:52:42.659 -05:00 [INF] Executing action method Sol.NHI.ApiPersona.Controllers.PersonaController.Recuperar (Sol.NHI.ApiPersona) - Validation state: "Valid"
+2020-12-12 10:53:13.430 -05:00 [INF] Entity Framework Core 3.1.10 initialized 'PersonaContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-12-12 10:53:28.830 -05:00 [ERR] An error occurred using the connection to database 'NhDbPersona' on server 'srttmpnh.database.windows.net'.
+2020-12-12 10:53:28.855 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Sol.NHI.ApiPersona.Contexto.PersonaContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2020-12-12 10:53:29.118 -05:00 [INF] Executed action Sol.NHI.ApiPersona.Controllers.PersonaController.Recuperar (Sol.NHI.ApiPersona) in 47396.5458ms
+2020-12-12 10:53:29.124 -05:00 [INF] Executed endpoint 'Sol.NHI.ApiPersona.Controllers.PersonaController.Recuperar (Sol.NHI.ApiPersona)'
+2020-12-12 10:53:29.136 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Sol.NHI.ApiPersona.Services.PersonaService.Get(Int32 id) in D:\Cursos\NH\202010\20487\Sesion02\Ejercicios\SoNHl.ApiOperacion\Sol.NHI.ApiPersona\Services\PersonaService.cs:line 20
+   at Sol.NHI.ApiPersona.Controllers.PersonaController.Recuperar(Int32 id) in D:\Cursos\NH\202010\20487\Sesion02\Ejercicios\SoNHl.ApiOperacion\Sol.NHI.ApiPersona\Controllers\PersonaController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2020-12-12 10:53:29.350 -05:00 [INF] Request finished in 47804.7534ms 500 text/plain
+2020-12-12 10:53:43.656 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/persona/1  
+2020-12-12 10:53:43.666 -05:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX12729: Unable to decode the header '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. jwtEncodedString: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> Newtonsoft.Json.JsonReaderException: Bad JSON escape sequence: \. Path '', line 2, position 22.
+   at Newtonsoft.Json.JsonTextReader.ReadStringIntoBuffer(Char quote)
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonReader.ReadAndAssert()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type)
+   at System.IdentityModel.Tokens.Jwt.JsonExtensions.DeserializeJwtHeader(String jsonString)
+   at System.IdentityModel.Tokens.Jwt.JwtHeader.Base64UrlDeserialize(String base64UrlEncodedJsonString)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityToken.Decode(String[] tokenParts, String rawData)
+   --- End of inner exception stack trace ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityToken.Decode(String[] tokenParts, String rawData)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ReadJwtToken(String token)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-12 10:53:43.675 -05:00 [INF] Bearer was not authenticated. Failure message: IDX12729: Unable to decode the header '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. jwtEncodedString: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-12-12 10:53:43.680 -05:00 [INF] Authorization failed.
+2020-12-12 10:53:43.684 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-12-12 10:53:43.693 -05:00 [INF] Request finished in 36.4432ms 401 
+2020-12-12 10:55:31.643 -05:00 [INF] User profile is available. Using 'C:\Users\Miguelon\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-12-12 10:55:33.143 -05:00 [WRN] Cadena es: Data Source=srttmpnh.database.windows.net;Initial Catalog=NhDbPersona;Persist Security Info=True;User ID=sqlserver;Password=A123456789123$
+2020-12-12 10:55:33.409 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-12-12 10:55:33.413 -05:00 [INF] Hosting environment: Development
+2020-12-12 10:55:33.426 -05:00 [INF] Content root path: D:\Cursos\NH\202010\20487\Sesion02\Ejercicios\SoNHl.ApiOperacion\Sol.NHI.ApiPersona
+2020-12-12 10:55:33.539 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/weatherforecast  
+2020-12-12 10:55:33.813 -05:00 [INF] Executing endpoint 'Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona)'
+2020-12-12 10:55:33.888 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Sol.NHI.ApiPersona.WeatherForecast] Get() on controller Sol.NHI.ApiPersona.Controllers.WeatherForecastController (Sol.NHI.ApiPersona).
+2020-12-12 10:55:33.908 -05:00 [INF] Executing action method Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona) - Validation state: "Valid"
+2020-12-12 10:55:33.925 -05:00 [INF] Executed action method Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.7456ms.
+2020-12-12 10:55:33.940 -05:00 [INF] Executing ObjectResult, writing value of type 'Sol.NHI.ApiPersona.WeatherForecast[]'.
+2020-12-12 10:55:34.061 -05:00 [INF] Executed action Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona) in 153.4992ms
+2020-12-12 10:55:34.073 -05:00 [INF] Executed endpoint 'Sol.NHI.ApiPersona.Controllers.WeatherForecastController.Get (Sol.NHI.ApiPersona)'
+2020-12-12 10:55:34.085 -05:00 [INF] Request finished in 563.5155ms 200 application/json; charset=utf-8
+2020-12-12 10:56:53.422 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/persona/1  
+2020-12-12 10:56:54.067 -05:00 [INF] Successfully validated the token.
+2020-12-12 10:56:54.076 -05:00 [INF] Authorization was successful.
+2020-12-12 10:56:54.081 -05:00 [INF] Executing endpoint 'Sol.NHI.ApiPersona.Controllers.PersonaController.Recuperar (Sol.NHI.ApiPersona)'
+2020-12-12 10:56:54.111 -05:00 [INF] Route matched with {action = "Recuperar", controller = "Persona"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Recuperar(Int32) on controller Sol.NHI.ApiPersona.Controllers.PersonaController (Sol.NHI.ApiPersona).
+2020-12-12 10:56:54.299 -05:00 [INF] Executing action method Sol.NHI.ApiPersona.Controllers.PersonaController.Recuperar (Sol.NHI.ApiPersona) - Validation state: "Valid"
+2020-12-12 11:02:52.915 -05:00 [INF] User profile is available. Using 'C:\Users\Miguelon\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-12-12 11:02:54.129 -05:00 [WRN] Cadena es: Data Source=.;Initial Catalog=NhDbPersona;Persist Security Info=True;User ID=sa;Password=A12345$
+2020-12-12 11:02:54.310 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-12-12 11:02:54.313 -05:00 [INF] Hosting environment: Development
+2020-12-12 11:02:54.330 -05:00 [INF] Content root path: D:\Cursos\NH\202010\20487\Sesion02\Ejercicios\SoNHl.ApiOperacion\Sol.NHI.ApiPersona
+2020-12-12 11:02:54.420 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/weatherforecast  
+2020-12-12 11:02:54.588 -05:00 [INF] Authorization failed.
+2020-12-12 11:02:54.599 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-12-12 11:02:54.630 -05:00 [INF] Request finished in 226.121ms 401 
+2020-12-12 11:03:08.282 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/weatherforecast  
+2020-12-12 11:03:08.305 -05:00 [INF] Authorization failed.
+2020-12-12 11:03:08.329 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-12-12 11:03:08.338 -05:00 [INF] Request finished in 51.9736ms 401 
+2020-12-12 11:03:38.190 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/persona/1  
+2020-12-12 11:03:38.724 -05:00 [INF] Successfully validated the token.
+2020-12-12 11:03:38.735 -05:00 [INF] Authorization failed.
+2020-12-12 11:03:38.741 -05:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2020-12-12 11:03:38.750 -05:00 [INF] Request finished in 561.1752ms 403 
+2020-12-12 11:04:15.479 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6559/persona/1  
+2020-12-12 11:04:15.497 -05:00 [INF] Successfully validated the token.
+2020-12-12 11:04:15.540 -05:00 [INF] Authorization was successful.
+2020-12-12 11:04:15.543 -05:00 [INF] Executing endpoint 'Sol.NHI.ApiPersona.Controllers.PersonaController.Recuperar (Sol.NHI.ApiPersona)'
+2020-12-12 11:04:15.608 -05:00 [INF] Route matched with {action = "Recuperar", controller = "Persona"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Recuperar(Int32) on controller Sol.NHI.ApiPersona.Controllers.PersonaController (Sol.NHI.ApiPersona).
+2020-12-12 11:04:15.820 -05:00 [INF] Executing action method Sol.NHI.ApiPersona.Controllers.PersonaController.Recuperar (Sol.NHI.ApiPersona) - Validation state: "Valid"
+2020-12-12 11:04:19.521 -05:00 [INF] Entity Framework Core 3.1.10 initialized 'PersonaContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-12-12 11:04:20.425 -05:00 [INF] Executed DbCommand (110ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[IdPersona], [p].[ApellidoMaterno], [p].[ApellidoPaterno], [p].[Nombres]
+FROM [Persona] AS [p]
+WHERE [p].[IdPersona] = @__id_0
+2020-12-12 11:04:20.568 -05:00 [INF] Executed action method Sol.NHI.ApiPersona.Controllers.PersonaController.Recuperar (Sol.NHI.ApiPersona), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4737.6696ms.
+2020-12-12 11:04:20.579 -05:00 [INF] Executing ObjectResult, writing value of type 'Sol.NHI.ApiPersona.Model.Persona'.
+2020-12-12 11:04:20.608 -05:00 [INF] Executed action Sol.NHI.ApiPersona.Controllers.PersonaController.Recuperar (Sol.NHI.ApiPersona) in 4982.85ms
+2020-12-12 11:04:20.615 -05:00 [INF] Executed endpoint 'Sol.NHI.ApiPersona.Controllers.PersonaController.Recuperar (Sol.NHI.ApiPersona)'
+2020-12-12 11:04:20.623 -05:00 [INF] Request finished in 5144.1969ms 200 application/json; charset=utf-8

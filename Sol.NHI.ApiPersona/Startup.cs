@@ -43,6 +43,32 @@ namespace Sol.NHI.ApiPersona
             services.AddControllers();
 
             AddSwagger(services);
+
+
+            services.AddAuthentication("Bearer")
+                .AddJwtBearer("Bearer", opt =>
+                {
+                    opt.Authority = "http://localhost:4125/";
+                    opt.RequireHttpsMetadata = false;
+                    opt.TokenValidationParameters =
+                        new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                        {
+                            ValidateAudience = false,
+                            ValidateIssuer = false
+                        };
+                });
+
+
+            services.AddAuthorization(opt => {
+                opt.AddPolicy("Identidad", det =>
+                {
+
+                    det.RequireAuthenticatedUser();
+                    det.RequireClaim("scope", "apipersona");
+                });
+            
+            });
+
         }
 
         private void AddSwagger(IServiceCollection services)
@@ -106,12 +132,12 @@ namespace Sol.NHI.ApiPersona
             });
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllers().RequireAuthorization("Identidad");
             });
         }
     }

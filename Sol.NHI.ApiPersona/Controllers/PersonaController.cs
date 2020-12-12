@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Sol.NHI.ApiPersona.Helpers.Filters;
 using Sol.NHI.ApiPersona.Model;
 using Sol.NHI.ApiPersona.Services;
@@ -11,6 +12,7 @@ namespace Sol.NHI.ApiPersona.Controllers
 {
     //[ApiController]
     [Route("[controller]")]
+    //[Authorize]
     public class PersonaController : ControllerBase
     {
         private readonly IPersonaService personaService;
